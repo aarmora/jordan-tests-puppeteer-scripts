@@ -1,0 +1,37 @@
+{
+	"name": "testing-puppeteer-scripts",
+	"version": "1.0.0",
+	"description": "Jordan mocks out Puppeteer method in order to build tests for scripts that use Puppeteer",
+	"main": "./dist/index.js",
+	"scripts": {
+		"start": "rm -rf ./dist && tsc && node ./dist/index.js",
+		"test": "npm run test:clearCache && jest",
+		"test:clearCache": "jest --clearCache"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aarmora/jordan-tests-puppeteer-scripts.git"
+	},
+	"keywords": [
+		"puppeteer",
+		"testing",
+		"mocks",
+		"typescript"
+	],
+	"author": "Jordan Hansen",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/aarmora/jordan-tests-puppeteer-scripts/issues"
+	},
+	"homepage": "https://github.com/aarmora/jordan-tests-puppeteer-scripts#readme",
+	"devDependencies": {
+		"@types/jest": "^25.2.1",
+		"@types/puppeteer": "^2.0.1",
+		"jest": "^25.3.0",
+		"ts-jest": "^25.3.1",
+		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"puppeteer": "^2.1.1"
+	}
+}
